@@ -21,7 +21,7 @@ const CountryDetails = async ({
   subregion: string;
   capital: string[];
   tld: string;
-  currencies: string[];
+  currencies: { name: string }[];
   languages: string[];
   borders: string[];
   nativeName: string;

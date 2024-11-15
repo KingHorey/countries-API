@@ -4,7 +4,7 @@ import CountryFlag from "./countryFlag";
 import { getCountries } from "@/lib/data";
 import CountryDetails from "./countryDetails";
 
-import { nunitoSans } from "@/app/layout";
+import { nunitoSans } from "@/lib/font";
 
 const Information = async ({ name }: { name: string }) => {
   const countryName = name.replace(/-/g, " ");
@@ -23,7 +23,7 @@ const Information = async ({ name }: { name: string }) => {
     currencies,
   } = data[0];
 
-  function getNativeName(names: Record<string, string>) {
+  function getNativeName(names: Record<string, { common: string }>) {
     const name = [Object.keys(names)[Object.keys(names).length - 1]];
     return names[name[0]].common;
   }
@@ -32,8 +32,10 @@ const Information = async ({ name }: { name: string }) => {
     return Array.from(Object.values(languages));
   }
 
-  function generateCurrencies(currencies: Record<string, string>) {
-    const currency = Array.from(Object.values(currencies));
+  function generateCurrencies(currencies: Record<string, { name: string }>) {
+    const currency = Array.from(Object.values(currencies)).map((currency) => ({
+      name: currency.name,
+    }));
 
     return currency;
   }

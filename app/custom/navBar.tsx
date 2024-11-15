@@ -2,7 +2,7 @@
 
 import React from "react";
 import { MoonIcon } from "@heroicons/react/24/outline";
-import { nunitoSans } from "../layout";
+import { nunitoSans } from "@/lib/font";
 
 import { useTheme } from "next-themes";
 import Link from "next/link";

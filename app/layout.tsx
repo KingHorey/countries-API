@@ -1,12 +1,11 @@
-import type { Metadata } from "next";
-import { Nunito_Sans } from "next/font/google";
+// import type { Metadata } from "next";
 
 import "./globals.css";
 import NavBar from "./custom/navBar";
 import Container from "./custom/container";
 import { ThemeProvider } from "./custom/theme-provider";
 
-export const nunitoSans = Nunito_Sans({ subsets: ["latin"] });
+import { nunitoSans } from "@/lib/font";
 
 // export const metadata: Metadata = {
 //   title: "Create Next App",
