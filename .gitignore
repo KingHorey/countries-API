@@ -13,6 +13,8 @@
 # testing
 /coverage
 
+/rawFiles/rest-countries-api-with-color-theme-switcher-master.zip
+
 # next.js
 /.next/
 /out/
