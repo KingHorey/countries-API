@@ -27,4 +27,43 @@ Users should be able to:
 
 ### Screenshot
 
-![]
+![](./public/country-information-darkmode.png)
+![](./public/countryinfo-mobileview.png)
+![](./public/desktop-darkmode.png)
+![](./public/desktop-lightmode.png)
+![](./public/tablet-view.png)
+
+### Links
+
+- Solution URL: [GitHub](https://github.com/KingHorey/countries-API)
+- Live Site URL: [Vercel](https://countries-api-seven-neon.vercel.app/)
+
+## My Process
+
+I started out with mapping in my mind the various components for the page and what components would be client component or server components.
+
+### Built with
+
+- [Next.js](https://nextjs.org/) - React framework
+- [Tailwind CSS](https://tailwindcss.com)
+- [ShadCN](https://www.shadcn.com)
+- [Lucide Icons](https://lucide.dev/icons)
+
+### What I learned
+
+SInce this was my frist project with the NextJS framework, I learned:
+
+- Thinking about how to structure files, directories
+
+- Splitting components into client and server types
+
+- Code modularity
+
+### Continued Development
+
+Since API calls were made with Axios, the made is not a SSG page, further changes would focus on caching and also adding more visually appealing features like skeletons, not found page and Error pages
+
+## Author
+
+- GitHib - [kingHorey](https://www.github.com/kingHorey)
+- X - [@kingHorey](https://www.x.com/kinghorey)
