@@ -42,10 +42,10 @@ const Information = async ({ name }: { name: string }) => {
 
   return (
     <main
-      className={`w-screen h-screen ${nunitoSans.className} dark:bg-veryDarkBlue bg-offWhite text-darkBlue dark:text-white`}
+      className={`w-screen ${nunitoSans.className} dark:bg-veryDarkBlue bg-offWhite text-darkBlue dark:text-white`}
     >
       <Container>
-        <div className="flex xs:flex-col md:flex-row xs:gap-y-10 md:gap-y-0 md:justify-between gap-x-10 items-center h-screen xs:py-10 py-0 ">
+        <div className="flex xs:flex-col md:flex-row xs:gap-y-10 md:gap-y-0 md:justify-between gap-x-10 items-center min-h-screen xs:py-10 py-0 ">
           <CountryFlag flag={flags.svg} name={country.official} />
           <CountryDetails
             name={country.common}

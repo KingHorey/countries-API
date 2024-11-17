@@ -29,7 +29,7 @@ const CountryDetails = async ({
   const border = await fetchBorder(borders);
 
   return (
-    <div className="flex flex-col w-full md:w-3/5 xs:justify-start md:justify-center xs:gap-y-3 lg:gap-y-10 md:mt-10">
+    <div className="flex flex-col w-full md:w-3/5 xs:justify-start md:justify-center xs:gap-y-3 lg:gap-y-10 md:mt-10 dark:bg-veryDarkBlue">
       <h1 className={`xs:text-xl sm:text-xl lg:text-3xl font-bold`}>{name}</h1>
       <div className="md:grid md:grid-cols-2 md:gap-x-5">
         <div className="flex flex-col xs:gap-y-3 lg:gap-y-2 xs:text-sm md:text-base">
